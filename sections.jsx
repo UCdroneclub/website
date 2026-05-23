@@ -44,15 +44,15 @@ const About = ({ idx, total }) => {
   return (
     <Section id="about" idx={idx} total={total} label="About"
              title={<>A student squadron,<br/>built for flight.</>}
-             intro={<>UCDC is a UC Davis registered student organization. We design, build, fly, and race drones &mdash; and we train every member to the FAA Part 107 standard before they take a stick.</>}>
+             intro={<>UCDC is a UC registered student organization. We design, build, fly, and race drones &mdash; and we train every member to the FAA Part 107 standard before they take a stick.</>}>
       <div className="about-grid">
         <div>
           <p className="about-lead">
             We don&rsquo;t buy drones &mdash; we <span className="red">build them.</span> Every airframe in our hangar was cut, soldered, tuned, and crashed at least once by an undergraduate.
           </p>
           <div className="about-body">
-            <p>Since 2018, the UC Drone Club has been the home base for UC Davis students who want to put hardware in the air. We meet weekly at Bainer Hall for builds and at Russell Ranch for flights &mdash; rain or shine, as long as the wind is below 18 knots.</p>
-            <p>Our program is structured around three tracks: <strong>FPV freestyle</strong>, <strong>multi-rotor racing</strong>, and <strong>autonomous payload</strong>. Members move between tracks as they level up. Membership is free for all UC Davis students &mdash; we provide build kits, parts, and field access.</p>
+            <p>Since 2018, the UC Drone Club has been the home base for UC students who want to put hardware in the air. We meet weekly at Bainer Hall for builds and at Russell Ranch for flights &mdash; rain or shine, as long as the wind is below 18 knots.</p>
+            <p>Our program is structured around three tracks: <strong>FPV freestyle</strong>, <strong>multi-rotor racing</strong>, and <strong>autonomous payload</strong>. Members move between tracks as they level up. Membership is free for all UC students &mdash; we provide build kits, parts, and field access.</p>
             <p>We are open to all majors. Half our active roster is non-engineering &mdash; we&rsquo;ve had English majors place top-5 at regionals, and our best aerial cinematographer is a Plant Sciences PhD.</p>
           </div>
         </div>
