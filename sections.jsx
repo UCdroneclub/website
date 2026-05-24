@@ -28,7 +28,7 @@ const Section = ({ id, idx, total, label, title, intro, children, className = ''
 // ============================================================
 const OFFICERS_DEFAULT = [
   { name: 'Mohit Timalsina',     role: 'Co-Founder',       spec: 'cool',    bio: '2nd-year Mechanical Engineering. Refuses to fly anything he didn\u2019t solder.' },
-  { name: 'Thomas Burkholder',        role: 'Co-Founder', spec: 'cool', bio: '2ne-year Mechanical Engineer. Owns more LiPo bags than couches.' }
+  { name: 'Thomas Burkholder',        role: 'Co-Founder', spec: 'cool', bio: '2ne-year Mechanical Engineer. Owns more LiPo bags than couches.' },
 ];
 
 const About = ({ idx, total }) => {
@@ -91,7 +91,7 @@ const About = ({ idx, total }) => {
         open={addOpen}
         title="Add an officer"
         fields={[
-          { name: 'name', label: 'Name',     required: true, placeholder: 'Alex Chen' },
+          { name: 'name', label: 'Name',     required: true, placeholder: 'Mohit Timalsina' },
           { name: 'role', label: 'Role',     required: true, placeholder: 'Membership Chair' },
           { name: 'spec', label: 'Tags',     placeholder: 'CINE, COMMS' },
           { name: 'bio',  label: 'Short bio', type: 'textarea', placeholder: 'One sentence about them.' },
