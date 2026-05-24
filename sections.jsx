@@ -27,8 +27,9 @@ const Section = ({ id, idx, total, label, title, intro, children, className = ''
 // ABOUT + OFFICERS
 // ============================================================
 const OFFICERS_DEFAULT = [
-  { name: 'Mohit Timalsina',     role: 'Co-Founder',       spec: 'cool',    bio: '2nd-year Mechanical Engineering. Refuses to fly anything he didn\u2019t solder.' },
-  { name: 'Thomas Burkholder',        role: 'Co-Founder', spec: 'cool', bio: '2ne-year Mechanical Engineer. Owns more LiPo bags than couches.' },
+  { name: 'Mohit Timalsina',   role: 'Co-Founder', spec: 'cool', bio: '2nd-year Mechanical Engineering. Refuses to fly anything he didn\'t solder.' },
+  { name: 'Thomas Burkholder', role: 'Co-Founder', spec: 'cool', bio: '2nd-year Mechanical Engineer. Owns more LiPo bags than couches.' },
+  { name: 'New Person',        role: 'Member',     spec: 'cool', bio: 'Write their bio here.' },
 ];
 
 const About = ({ idx, total }) => {
