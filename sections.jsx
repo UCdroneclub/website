@@ -27,14 +27,8 @@ const Section = ({ id, idx, total, label, title, intro, children, className = ''
 // ABOUT + OFFICERS
 // ============================================================
 const OFFICERS_DEFAULT = [
-  { name: 'Jordan Rivera',     role: 'President',       spec: 'FPV ACRO, PT-107',    bio: '4th-year Aerospace Engineering. Logs the most flight hours in the club and refuses to fly anything she didn\u2019t solder.' },
-  { name: 'Devon Park',        role: 'VP / Operations', spec: 'LOGISTICS, OUTREACH', bio: '3rd-year ME. Negotiates field access, batteries, and pizza. Owns more LiPo bags than couches.' },
-  { name: 'Aanya Mehta',       role: 'Build Captain',   spec: 'CARBON, BETAFLIGHT',  bio: '4th-year EE. Tunes PID loops in her sleep. Designed the WILDCAT airframe (rev 4).' },
-  { name: 'Mateo Cruz',        role: 'Safety Officer',  spec: 'SOP, AIRSPACE',       bio: '3rd-year ATM. FAA Part 107 instructor. Carries a kill-switch and a clipboard. Always.' },
-  { name: 'Linh Tran',         role: 'Treasurer',       spec: 'BUDGET, GRANTS',      bio: '2nd-year Econ. Found us $14,800 in sponsorship and a Russell Ranch flight MOU.' },
-  { name: 'Sam O\u2019Connell',role: 'Outreach Lead',   spec: 'HS WORKSHOPS, DEMO',  bio: '3rd-year DES. Runs the demo drone at admit days; built the AR control overlay we use at expo.' },
-  { name: 'Priya Iyer',        role: 'Comp Captain',    spec: 'MULTIGP, AUTONOMY',   bio: '4th-year CS. Captained the team that took 3rd at MultiGP West regionals 2025.' },
-  { name: 'Ethan Schmidt',     role: 'Webmaster',       spec: 'TELEMETRY, CV',       bio: '2nd-year CSE. Built the live HUD overlay you\u2019re looking at right now.' },
+  { name: 'Mohit Timalsina',     role: 'Co-Founder',       spec: '',    bio: '2nd-year Mechanical Engineering. Refuses to fly anything he didn\u2019t solder.' },
+  { name: 'Thomas Burkholder',        role: 'Co-Founder', spec: '', bio: '2ne-year Mechanical Engineer. Owns more LiPo bags than couches.' }
 ];
 
 const About = ({ idx, total }) => {
