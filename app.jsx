@@ -268,7 +268,7 @@ const Hero = () => {
         <div className="hero-copy">
           <div>
             <div className="eyebrow" style={{ color: 'rgba(255,255,255,0.6)', marginBottom: 24 }}>
-              <span style={{ color: '#fff' }}>UC DRONE CLUB · UC DAVIS · EST. 2018</span>
+              <span style={{ color: '#fff' }}>UC DRONE CLUB · UC · EST. 2026</span>
             </div>
             <h1 className="hero-title">
               <div className="row">FLY <span className="accent">FAST.</span></div>
@@ -278,7 +278,7 @@ const Hero = () => {
           </div>
           <div>
             <p className="hero-sub">
-              We are a registered student organization at UC Davis designing, building, and racing autonomous and FPV drones. From sub-250g whoops to full carbon X-class racers — we ship hardware, win competitions, and train the next class of FAA‑certified pilots.
+              We are a registered student organization at UC designing, building, and racing autonomous and FPV drones. From sub-250g whoops to full carbon X-class racers — we ship hardware, win competitions, and train the next class of FAA‑certified pilots.
             </p>
             <div className="hero-actions">
               <a href="#join" className="btn">Apply for Fall 2026 <span className="arrow">→</span></a>
