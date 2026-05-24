@@ -5,12 +5,12 @@ const { useState, useEffect, useRef, useMemo } = React;
 // PARTNERS & SUPPORT (was Sponsors — no pricing, free club)
 // ============================================================
 const PARTNERS_DEFAULT = [
-  'UC Davis College of Engineering',
-  'UC Davis Center for Student Involvement',
+  'UC   College of Engineering',
+  'UC   Center for Student Involvement',
   'Russell Ranch \u2014 Field Access',
-  'IEEE Davis Student Branch',
+  'IEEE   Student Branch',
   'EBII Maker Space',
-  'Davis Aero Hobby Shop',
+  '  Aero Hobby Shop',
   'AggieHacks',
   'COSMOS Program',
   'Bambu Lab Education',
@@ -19,7 +19,7 @@ const PARTNERS_DEFAULT = [
 
 const WAYS_TO_HELP = [
   { kind: 'PARTS',     title: 'Donate parts',        body: 'Motors, frames, FCs, props, batteries. New, used, or pulled \u2014 we can use almost anything.' },
-  { kind: 'FIELD',     title: 'Lend a flight field', body: 'Open land within 30mi of Davis, with clear airspace and no overhead wires. We bring spotters and a kill-switch SOP.' },
+  { kind: 'FIELD',     title: 'Lend a flight field', body: 'Open land within 30mi of  , with clear airspace and no overhead wires. We bring spotters and a kill-switch SOP.' },
   { kind: 'MENTOR',    title: 'Mentor a cohort',     body: 'One night per quarter. Walk our build cohort through PID tuning, autonomy, photogrammetry, or your specialty.' },
   { kind: 'SPONSOR',   title: 'Department support',  body: 'In-kind shop time, machine access, lab space, or printable materials. We&rsquo;re a registered RSO; donations flow through CSI.' },
   { kind: 'RECRUIT',   title: 'Recruit our pilots',  body: 'We graduate eight to twelve hardware-fluent students every year. Send us your spring openings and we&rsquo;ll circulate them.' },
@@ -33,7 +33,7 @@ const Sponsors = ({ idx, total }) => {
   return (
     <Section id="sponsors" idx={idx} total={total} label="Partners"
              title={<>UCDC runs on people,<br/>not paywalls.</>}
-             intro={<>Membership is free for every UC Davis student. We keep the lights on with department support, donated parts, mentor time, and field access from organizations who believe in hands-on engineering.</>}>
+             intro={<>Membership is free for every UC   student. We keep the lights on with department support, donated parts, mentor time, and field access from organizations who believe in hands-on engineering.</>}>
       <div className="ways">
         {WAYS_TO_HELP.map((w, i) => (
           <div className="way" key={w.title}>
@@ -70,7 +70,7 @@ const Sponsors = ({ idx, total }) => {
         open={addOpen}
         title="Add a partner"
         fields={[
-          { name: 'name', label: 'Organization name', required: true, placeholder: 'Davis Robotics Lab' },
+          { name: 'name', label: 'Organization name', required: true, placeholder: '  Robotics Lab' },
         ]}
         onCancel={() => setAddOpen(false)}
         onSubmit={(v) => { add(v.name); setAddOpen(false); }}
@@ -100,7 +100,7 @@ const Join = ({ idx, total }) => {
     if (!form.firstName.trim()) e.firstName = 'Required';
     if (!form.lastName.trim())  e.lastName  = 'Required';
     if (!form.email.trim())     e.email     = 'Required';
-    else if (!/^[^\s@]+@(ucdavis\.edu|.+\..+)$/i.test(form.email)) e.email = 'Invalid email';
+    else if (!/^[^\s@]+@(uc \.edu|.+\..+)$/i.test(form.email)) e.email = 'Invalid email';
     if (!form.major.trim())     e.major     = 'Required';
     if (!form.year)             e.year      = 'Required';
     if (!form.experience)       e.experience = 'Pick one';
@@ -120,7 +120,7 @@ const Join = ({ idx, total }) => {
   return (
     <Section id="join" idx={idx} total={total} label="Join" className="join"
              title={<>Apply for the <span style={{color: 'var(--red)'}}>Fall 2026</span> cohort.</>}
-             intro={<>We accept new members each fall and a smaller winter cohort. No experience needed &mdash; just hands, time, and a willingness to crash on day one. Membership is <strong style={{ color: '#fff' }}>free</strong> for every UC Davis student.</>}>
+             intro={<>We accept new members each fall and a smaller winter cohort. No experience needed &mdash; just hands, time, and a willingness to crash on day one. Membership is <strong style={{ color: '#fff' }}>free</strong> for every UC   student.</>}>
       <div className="join-grid">
         <div className="join-pitch">
           <h3>What you&rsquo;ll get in your <span className="red">first quarter.</span></h3>
@@ -129,7 +129,7 @@ const Join = ({ idx, total }) => {
           <div className="join-reqs">
             <h4>Requirements</h4>
             <ul>
-              <li>Enrolled UC Davis student (undergrad or grad)</li>
+              <li>Enrolled UC   student (undergrad or grad)</li>
               <li>Free to join &mdash; build kits and parts provided by the club</li>
               <li>Sign the club SOP and FAA airspace acknowledgement</li>
               <li>Attend at least one solder night before your first flight</li>
@@ -173,8 +173,8 @@ const Join = ({ idx, total }) => {
             </div>
 
             <div className={`field ${errors.email ? 'has-error' : ''}`}>
-              <label>UC Davis email <span className="req">*</span>{errors.email && <span className="field-error">{errors.email}</span>}</label>
-              <input type="email" value={form.email} onChange={e => update('email', e.target.value)} placeholder="jrivera@ucdavis.edu"/>
+              <label>UC   email <span className="req">*</span>{errors.email && <span className="field-error">{errors.email}</span>}</label>
+              <input type="email" value={form.email} onChange={e => update('email', e.target.value)} placeholder="jrivera@uc .edu"/>
             </div>
 
             <div className="form-row">
@@ -259,7 +259,7 @@ const Footer = () => (
             </svg>
             <span className="mark-name">UC Drone Club</span>
           </div>
-          <p>Registered student organization at the University of California, Davis. Free to join, open to all majors. Building, flying, and racing since 2018.</p>
+          <p>Registered student organization at the University of California,  . Free to join, open to all majors. Building, flying, and racing since 2018.</p>
         </div>
 
         <div className="footer-col">
@@ -291,7 +291,7 @@ const Footer = () => (
             <li><a href="mailto:partners@ucdroneclub.org">partners@ucdroneclub.org</a></li>
             <li><a href="mailto:safety@ucdroneclub.org">safety@ucdroneclub.org</a></li>
             <li style={{ color: 'rgba(255,255,255,0.5)', fontSize: 13 }}>Bainer Hall 1062 &middot; Mailbox C-217</li>
-            <li style={{ color: 'rgba(255,255,255,0.5)', fontSize: 13 }}>One Shields Ave, Davis CA 95616</li>
+            <li style={{ color: 'rgba(255,255,255,0.5)', fontSize: 13 }}>One Shields Ave,   CA 95616</li>
           </ul>
         </div>
       </div>
